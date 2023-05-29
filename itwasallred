@@ -1,0 +1,23 @@
+#include <iostream>
+
+int factorial(int n) {
+    if (n == 0)
+        return 1;
+    else
+        return n * factorial(n - 1);
+}
+
+int main() {
+    // Prompt the user for input
+    int number;
+    std::cout << "Enter a number: ";
+    std::cin >> number;
+
+    // Calculate the factorial
+    int result = factorial(number);
+
+    // Display the result
+    std::cout << "The factorial of " << number << " is " << result << "." << std::endl;
+
+    return 0;
+}
